@@ -1,12 +1,13 @@
 const qcloudSDK = require('qcloud-cdn-node-sdk');
+var config = hexo.config;
 
 qcloudSDK.config({
-    secretId: 'AKIDJMEfZVKcVDWqbGDKh84qjHZbI2yML9yH',
-    secretKey: 'c2DPMxhPAnhwKa99vR6nwqhUIZiofOOy'
+    secretId: config.deploy[0].secretId,
+    secretKey: config.deploy[0].secretKey
 })
 
 qcloudSDK.request('RefreshCdnDir', {
-	'dirs.1': 'https://lruihao.cn' 
+	'dirs.1': config.url
 }, (res) => {
     console.log(res)
 })

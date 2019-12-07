@@ -17,7 +17,7 @@ keywords:
 - Frontend
 - JavaScript
 - Backend
-top: 9
+top:
 author:
 delicate: true
 ---

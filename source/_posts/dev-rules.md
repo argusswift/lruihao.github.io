@@ -10,6 +10,7 @@ tags:
 categories:
 - Fullstack
 delicate: true
+top: 10
 ---
 
 # 精神
@@ -19,11 +20,32 @@ delicate: true
 
 # Git
 * Master 的 BUG 必須最少且趨近於零，为最稳定的版本
-* 每次 Commit 訊息應該確實填寫。不可模稜兩可，eg: 修复bug
+* 每次 Commit 訊息應該確實填寫。不可模稜兩可，eg: 修复BUG、增加功能
 * 禁止 Commit IDE 的 project data
-* 禁止上传垃圾程式码
-* 合并后的分支应删除
+* 禁止上傳垃圾程式碼
+* Gitea編輯內容類似里程碑和版本描述時要使用Markdown格式
 
+## 分支（Branch）
+* 命名規則：應以此分支主要目的命名（修復什麼BUG，新增特定功能）  
+  不可出現版本號，模組ID
+* 合併後的分支應刪除
+
+## commit
+* 遵循一個功能一個commit的原則
+
+# Restful
+* 資源名詞站在API的角度思考
+  * 複數名詞：可以複數筆資料，回傳結果為Array
+    舉例：GET/users 取得多筆使用者資料
+    * 刪除，放在複數名詞內，讓Router保持一致性
+    * 增加，放在複數名詞內，讓Router保持一致性
+  * 單數名詞：僅取得單筆資料，必須指定PK，兩兩一組，回傳結果為Object
+    舉例：GET/user/{accont} 取得單筆使用者資料，必須指定PK
+* URL中一律不帶id參數
+```
+正確範例： calendar_manager/calendar/29
+錯誤範例： calendar_manager/calendar/29?id=29
+```
 
 # 命名
 * 命名應根據內容做有意義的命名，讓後續維護人員可以顧名思義!
@@ -36,7 +58,7 @@ delicate: true
 |方法 (Method, Function)|動詞+名詞<br/>getUserName、get_user_name|常見的動詞有：get、set、update、delete、remove|
 
 ## 字母與分隔
-<table style="background: #fff;"><tbody><tr><th>語言</th><th>變數 (Variable, Parameter, Argument)</th><th>常數 (Constant)</th><th>物件導向 - 類名 (Class Name)</th><th>物件導向 - 成員 (mebmer)</th></tr><tr><td>HTML、CSS</td><td>全部小寫，不同單字以「-」分隔 <br> user-id</td><td colspan="3"></td></tr><tr><td>JavaScript</td><td>首字小寫，不同單字「首字以大寫」分隔 <br> userId</td><td rowspan="2">全部大寫，不同單字以「_」分隔<br>MAX_COUNT</td><td rowspan="2">首字大寫，不同單字「首字以大寫」分隔<br>一個檔案放一個 Class<br>檔名即為 Class Name<br>User</td><td rowspan="2">公有 (public)&nbsp;: 首字小寫，不同單字「首字以大寫」分隔 <br> name, getName<br>私有 (private): _公有命名規則<br> _name, _getName</td></tr><tr><td>PHP</td><td>全部小寫，不同單字以「_」分隔 <br> user_id</td></tr><tr><td>SQL</td><td>由使用者定義的：表名、欄位名<br>全部小寫，不同單字以「_」分隔</td><td>SQL語法、函數 <br> 全部大寫 <br> SELECT、INSERT INTO</td><td colspan="2">-</td></tr></tbody></table>
+<table style="background: #fff;"><tbody><tr><th>語言</th><th>變數 (Variable, Parameter, Argument)</th><th>常數 (Constant)</th><th>物件導向 - 類名 (Class Name)</th><th>物件導向 - 成員 (mebmer)</th></tr><tr><td>HTML、CSS</td><td>全部小寫，不同單字以「-」分隔 <br> user-id</td><td colspan="3"></td></tr><tr><td>JavaScript</td><td><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>首字小寫，不同單字「首字以大寫」分隔 <br> userId</td><td rowspan="2">全部大寫，不同單字以「_」分隔<br>MAX_COUNT</td><td rowspan="2"><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>首字大寫，不同單字「首字以大寫」分隔<br>一個檔案放一個 Class<br>檔名即為 Class Name<br>User</td><td rowspan="2"><div style="color: #428bca;font-weight: bold;text-align: center;">駝峰式命名法</div>公有 (public)&nbsp;: 首字小寫，不同單字「首字以大寫」分隔 <br> name, getName<br>私有 (private): _公有命名規則<br> _name, _getName</td></tr><tr><td>PHP</td><td>全部小寫，不同單字以「_」分隔 <br> user_id</td></tr><tr><td>SQL</td><td>由使用者定義的：表名、欄位名<br>全部小寫，不同單字以「_」分隔</td><td>SQL語法、函數 <br> 全部大寫 <br> SELECT、INSERT INTO</td><td colspan="2">-</td></tr></tbody></table>
 
 # 通用
 * 程式碼撰寫
