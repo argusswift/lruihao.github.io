@@ -47,7 +47,7 @@
   site: https://me.obey.fun
   info: 分享，成为你我之间的快乐！
 - nickname: Wizzie
-  avatar: https://wizzie.top/avatar/smile.jpg
+  avatar: #https://wizzie.top/avatar/smile.jpg
   site: https://wizzie.top
   info: “Brave, Confident, Come on!”
 - nickname: 莫子谦
@@ -59,7 +59,7 @@
   site: https://liyangzone.com
   info: 前端开发，骑行爱好者，分享技术、分享生活。&#10;Front-End Developer
 - nickname: 北宸
-  avatar: https://www.liaofuzhan.com/images/beichen.png
+  avatar: #https://www.liaofuzhan.com/images/beichen.png
   site: https://www.liaofuzhan.com
   info: “Java狮 北漂男 摄影 旅行 赚钱”
 - nickname: 小丁
@@ -71,7 +71,7 @@
   site: https://www.larscheng.com
   info: 分享Java技术, 记录点滴生活。
 - nickname: 松林羊
-  avatar: http://www.andus.top/images/head-nav.png
+  avatar: #http://www.andus.top/images/head-nav.png
   site: http://www.andus.top
   info: 面朝大海，春暖花开。
 - nickname: 淺的小站
@@ -80,9 +80,13 @@
   info: 深思、淺思、三思而行。
 - nickname: JerryC
   avatar: http://jerryc.me/img/avatar.png
-  site:  http://jerryc.me
+  site: http://jerryc.me
   info: 今日事,今日畢。
 - nickname: 辣椒の酱
   avatar: https://removeif.github.io/images/avatar.jpg
-  site:  https://removeif.github.io
+  site: https://removeif.github.io
   info: 后端开发，技术分享
+- nickname: 暂时不接受友链
+  avatar:
+  site: https://lruihao.cn
+  info: 暂时不接受友链！

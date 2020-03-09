@@ -4,7 +4,11 @@ date: 2018-09-28 18:29:20
 layout: links
 ---
 
-{% note info no-icon %}
+{% note info %}
+暂时不接受友链！
+{% endnote %}
+
+<!-- {% note info no-icon %}
 #### 基本信息
 - 名称：菠菜眾長
 - 地址：<https://lruihao.cn>
@@ -17,7 +21,7 @@ layout: links
 1. 互换友链请在评论留言，**仅限个人非商业博客/网站**，最好加上你网站的描述，以便区分。 （排名不分先后）
 2. **站点失效、停止维护、内容不当都可能被取消链接！**
 3. **那些不尊重他人劳动成果，转载不加出处的，或恶意行为的站点，还请您不要来进行交换了。**
-{% endnote %}
+{% endnote %} -->
 
 <!-- 
 |<center>链接</center>|<center>描述</center>|
