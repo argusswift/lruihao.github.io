@@ -81,6 +81,6 @@ python /home/python/yiban_daka/daka.py
 [CRON表达式的基本语法](/posts/cron.html)
 
 # 潇x巴哥的java web版本
-符合程序的应该有的简洁和方便，干净又卫生！
+符合程序员的应该有的简洁和方便，干净又卫生！
 `http://39.105.174.214/index.html`
 {% asset_img javaweb.png java web版 %}
