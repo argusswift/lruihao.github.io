@@ -1,9 +1,9 @@
 ---
-title: ĞÂ¹ÚÒßÇéÎ´·µĞ£Î´·µ¹¤µÚNÌìÖ®¡°×Ô¶¯´ò¿¨¡±
+title: æ–°å† ç–«æƒ…æœªè¿”æ ¡æœªè¿”å·¥ç¬¬Nå¤©ä¹‹â€œè‡ªåŠ¨æ‰“å¡â€
 date: 2020-03-25 08:22:42
 tags: 
 - Python
-- ½Å±¾
+- è„šæœ¬
 - POST
 categories:
 - Backend
@@ -12,45 +12,45 @@ categories:
 
 
 {% note info %}
-Õâ¼şÊÂ»¹µÃ´ÓÒ»Ö»òùòğËµÆğ...  
-ËãÁË£¬×òÌìÏÂÎç3µã°ë£¬ÎÒ»¹ÔÚÍõÕßÏ¿¹ÈTiming,Í»È»äìX°Í¸ç´òÁË¸öµç»°¸øÎÒËµ¹ØÓÚ×Ô¶¯´ò¿¨µÄÏë·¨...  
-°¥£¬·´Õı¾ÍÊÇÓÉÓÚÒßÇéĞèÒªÃ¿Ìì½¡¿µ´ò¿¨»ã±¨¸øÑ§Ğ££¬È»ºóÃ¿ÌìÌá½»Ò»ÑùµÄÌ«Âé·³ÁË£¬¾ÍÏëĞ´¸ö³ÌĞò×Ô¶¯´ò¿¨...
-ÎÒºÍäìX°Í¸çÈ·¶¨Ë¼Â·ºó±ø·ÖÁ½Â·£º 
-1. ËûÓÃjavaĞ´¸öºóÌ¨×Ô¶¯Ë¢¶àÈËµÄ£¬ÔÙÅª¸öÍøÒ³¸øÓÃ»§ÌîĞ´ÕËºÅÃÜÂë±£´æÔÚÊı¾İ¿â£»
-2. ÎÒÏëµÄ¾ÍºÜÖ±½Ó£¬Ö»Ë¢Ò»¸öÈËµÄ£¬pythonÄ£Äâä¯ÀÀÆ÷µÇÂ¼ºó´ò¿¨,ÔÙÉèÖÃ¶¨Ê±ÈÎÎñ£¨¶àÈËÔòÉè¶¨¶à¸ö£©£»
+è¿™ä»¶äº‹è¿˜å¾—ä»ä¸€åªè™è è¯´èµ·...  
+ç®—äº†ï¼Œæ˜¨å¤©ä¸‹åˆ3ç‚¹åŠï¼Œæˆ‘è¿˜åœ¨ç‹è€…å³¡è°·Timing,çªç„¶æ½‡Xå·´å“¥æ‰“äº†ä¸ªç”µè¯ç»™æˆ‘è¯´å…³äºè‡ªåŠ¨æ‰“å¡çš„æƒ³æ³•...  
+å“ï¼Œåæ­£å°±æ˜¯ç”±äºç–«æƒ…éœ€è¦æ¯å¤©å¥åº·æ‰“å¡æ±‡æŠ¥ç»™å­¦æ ¡ï¼Œç„¶åæ¯å¤©æäº¤ä¸€æ ·çš„å¤ªéº»çƒ¦äº†ï¼Œå°±æƒ³å†™ä¸ªç¨‹åºè‡ªåŠ¨æ‰“å¡...
+æˆ‘å’Œæ½‡Xå·´å“¥ç¡®å®šæ€è·¯åå…µåˆ†ä¸¤è·¯ï¼š 
+1. ä»–ç”¨javaå†™ä¸ªåå°è‡ªåŠ¨åˆ·å¤šäººçš„ï¼Œå†å¼„ä¸ªç½‘é¡µç»™ç”¨æˆ·å¡«å†™è´¦å·å¯†ç ä¿å­˜åœ¨æ•°æ®åº“ï¼›
+2. æˆ‘æƒ³çš„å°±å¾ˆç›´æ¥ï¼Œåªåˆ·ä¸€ä¸ªäººçš„ï¼Œpythonæ¨¡æ‹Ÿæµè§ˆå™¨ç™»å½•åæ‰“å¡,å†è®¾ç½®å®šæ—¶ä»»åŠ¡ï¼ˆå¤šäººåˆ™è®¾å®šå¤šä¸ªï¼‰ï¼›
 {% endnote %}
 
 <!--more-->
-# WindowsÔËĞĞĞ§¹û
-{% asset_img result1.png ´ò¿¨³É¹¦ %}
-{% asset_img result.png ÖØ¸´´ò¿¨ %}
-{% asset_img result2.png ¶¨Ê±ÈÎÎñÈÕÖ¾ %}
+# Windowsè¿è¡Œæ•ˆæœ
+{% asset_img result1.png æ‰“å¡æˆåŠŸ %}
+{% asset_img result.png é‡å¤æ‰“å¡ %}
+{% asset_img result2.png å®šæ—¶ä»»åŠ¡æ—¥å¿— %}
 
-# ºËĞÄ´úÂë
-> ÊÊÓÃºşÄÏ¹¤³ÌÑ§ÔºµÄ´ò¿¨ÏµÍ³¡£  
-ÇëÎğÀÄÓÃ´úÂëÌá½»²»Êµ½¡¿µĞÅÏ¢£¬ÒşÂ÷ÒßÇé½«ÊÜµ½Ïà¹Ø·¨ÂÉ´¦Àí£¡
+# æ ¸å¿ƒä»£ç 
+> é€‚ç”¨æ¹–å—å·¥ç¨‹å­¦é™¢çš„æ‰“å¡ç³»ç»Ÿã€‚  
+è¯·å‹¿æ»¥ç”¨ä»£ç æäº¤ä¸å®å¥åº·ä¿¡æ¯ï¼Œéšç’ç–«æƒ…å°†å—åˆ°ç›¸å…³æ³•å¾‹å¤„ç†ï¼
 
-```py Ä£ÄâµÇÂ¼´ò¿¨ https://github.com/Lruihao/python-funny-code/blob/master/%E6%98%93%E7%8F%AD%E6%89%93%E5%8D%A1.py ÍêÕû´úÂë
+```py æ¨¡æ‹Ÿç™»å½•æ‰“å¡ https://github.com/Lruihao/python-funny-code/blob/master/%E6%98%93%E7%8F%AD%E6%89%93%E5%8D%A1.py å®Œæ•´ä»£ç 
 def lajaDaka():
-  # µÇÂ¼
+  # ç™»å½•
   r1 = requests.post(login_url, data=login,headers=headers,verify=False)
   if r1.status_code == 200:
     print(time.strftime("%Y:%m:%d:%H:%M", time.localtime()))
-    print(login["username"] + " µÇÂ¼³É¹¦£¡")
-    # ÄÃµ½µÇÂ¼ºóµÄcookie²¢Ìí¼Óµ½headerÖĞ
+    print(login["username"] + " ç™»å½•æˆåŠŸï¼")
+    # æ‹¿åˆ°ç™»å½•åçš„cookieå¹¶æ·»åŠ åˆ°headerä¸­
     header1 = r1.headers
     headers["Cookie"] = header1["Set-Cookie"]
   else:
     return
 
-  # ´ò¿¨
+  # æ‰“å¡
   r2 = requests.post(daka_url, data=daka,headers=headers,verify=False)
   response2=r2.json()
   if r2.status_code != 200:
-    print("´ò¿¨Ê§°Ü£¡")
+    print("æ‰“å¡å¤±è´¥ï¼")
     return
   if response2["result"] == True:
-    print("´ò¿¨³É¹¦£¡")
+    print("æ‰“å¡æˆåŠŸï¼")
   else:
     print(response2["errorInfoList"][0]["message"])
 
@@ -58,39 +58,39 @@ if __name__=="__main__":
   lajaDaka()
 ```
 
-# ×Ô¶¯ÔËĞĞ
+# è‡ªåŠ¨è¿è¡Œ
 ## Windows
-ÊÊÓÃpython´úÂë¿ØÖÆĞİÃßÊ±¼ä
-```py ¶¨Ê±
+é€‚ç”¨pythonä»£ç æ§åˆ¶ä¼‘çœ æ—¶é—´
+```py å®šæ—¶
 if __name__=="__main__":
   while True:
     now_hour = time.strftime("%H", time.localtime())
     now_min = time.strftime("%M", time.localtime())
-    # ÉèÖÃÃ¿Ìì8µã·¢ËÍ
+    # è®¾ç½®æ¯å¤©8ç‚¹å‘é€
     if now_hour < "08":
       rest = 8 - int(now_hour)
       sleeptime = (rest-1)*3600 + (60-int(now_min))*60
-      print("Æô¶¯Ê±±±¾©Ê±¼äÎª£º"+time.strftime("%H:%M", time.localtime()),"\t½Å±¾½«ÔÚ",rest-1,"Ğ¡Ê±",int((sleeptime-(rest-1)*3600)/60),"·ÖÖÓºó´ò¿¨")
+      print("å¯åŠ¨æ—¶åŒ—äº¬æ—¶é—´ä¸ºï¼š"+time.strftime("%H:%M", time.localtime()),"\tè„šæœ¬å°†åœ¨",rest-1,"å°æ—¶",int((sleeptime-(rest-1)*3600)/60),"åˆ†é’Ÿåæ‰“å¡")
       time.sleep(sleeptime)
     elif now_hour > "08":
       rest = 8 - int(now_hour) + 24
       sleeptime = (rest-1)*3600 + (60-int(now_min))*60
-      print("Æô¶¯Ê±±±¾©Ê±¼äÎª£º"+time.strftime("%H:%M", time.localtime()),"\t½Å±¾½«ÔÚ",rest-1,"Ğ¡Ê±",int((sleeptime-(rest-1)*3600)/60),"·ÖÖÓºó´ò¿¨")
+      print("å¯åŠ¨æ—¶åŒ—äº¬æ—¶é—´ä¸ºï¼š"+time.strftime("%H:%M", time.localtime()),"\tè„šæœ¬å°†åœ¨",rest-1,"å°æ—¶",int((sleeptime-(rest-1)*3600)/60),"åˆ†é’Ÿåæ‰“å¡")
       time.sleep(sleeptime)
     elif now_hour == "08":
-      print("Èí¼şÃ÷Ìì¿ªÊ¼½«ÔÚÃ¿Ìì8µã·¢ËÍÊı¾İ£¡")
+      print("è½¯ä»¶æ˜å¤©å¼€å§‹å°†åœ¨æ¯å¤©8ç‚¹å‘é€æ•°æ®ï¼")
       lajaDaka()
       time.sleep(24*60*60-int(now_min)*60)
 ```
 
-## linux(ÔÆ·şÎñÆ÷)
-´î½¨python»·¾³ÏÂÔØÒÀÀµºó£¬Ê¹ÓÃshell½Å±¾¶¨Ê±Ö´ĞĞ¡£
-```bash ½Å±¾ÄÚÈİÉè¶¨
+## linux(äº‘æœåŠ¡å™¨)
+æ­å»ºpythonç¯å¢ƒä¸‹è½½ä¾èµ–åï¼Œä½¿ç”¨shellè„šæœ¬å®šæ—¶æ‰§è¡Œã€‚
+```bash è„šæœ¬å†…å®¹è®¾å®š
 python /home/python/yiban_daka/daka.py
 ```
-[CRON±í´ïÊ½µÄ»ù±¾Óï·¨](/posts/cron.html)
+[CRONè¡¨è¾¾å¼çš„åŸºæœ¬è¯­æ³•](/posts/cron.html)
 
-# äìx°Í¸çµÄjava web°æ±¾
-·ûºÏ³ÌĞòÔ±µÄÓ¦¸ÃÓĞµÄ¼ò½àºÍ·½±ã£¬¸É¾»ÓÖÎÀÉú£¡
+# æ½‡xå·´å“¥çš„java webç‰ˆæœ¬
+ç¬¦åˆç¨‹åºå‘˜çš„åº”è¯¥æœ‰çš„ç®€æ´å’Œæ–¹ä¾¿ï¼Œå¹²å‡€åˆå«ç”Ÿï¼
 `http://39.105.174.214/index.html`
-{% asset_img javaweb.png java web°æ %}
+{% asset_img javaweb.png java webç‰ˆ %}
