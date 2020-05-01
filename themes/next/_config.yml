@@ -603,8 +603,8 @@ valine:
   enable: true
   appid: 7HwTRT0Q0Tfrat6ugrT6P67c-gzGzoHsz # your leancloud application appid
   appkey: mhTY1kuUmviCtQwkwOASfsfD # your leancloud application appkey
-  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
-  verify: false # Verification code
+  enableQQ: true
+  requiredFields: ['mail']
   placeholder: ヾﾉ≧∀≦)o~ 有事请留言！\n评论功能以邮件作为通知方式！\n如有必要请填写正确邮箱！ # comment box placeholder
   avatar: wavatar # gravatar style: 404,mp,identicon,monsterid,wavatar,retro,robohash,blank
   guest_info: nick,mail,link # custom comment header

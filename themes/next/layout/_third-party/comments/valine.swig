@@ -27,6 +27,8 @@
     placeholder: '{{ theme.valine.placeholder }}',
     avatar: '{{ theme.valine.avatar }}',
     meta: guest,
+    enableQQ: '{{ theme.valine.enableQQ }}',
+    requiredFields: '{{ theme.valine.requiredFields }}',
     pageSize: '{{ theme.valine.pageSize }}' || 10,
     visitor: {{ theme.valine.visitor }},
     lang: '{{ theme.valine.language }}' || 'zh-cn'
