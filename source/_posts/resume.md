@@ -4,10 +4,10 @@ date: 2019-04-24 13:21:49
 tags:
 - 简历
 categories:
-password:
+password: lruihao
 abstract: 个人简历PDF
 message:
-top: 11
+top: 
 noreward: true
 ---
 
