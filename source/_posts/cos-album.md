@@ -42,7 +42,7 @@ cos桶相册，终于！！终于来了！！，思路参考自[给hexo静态博
 ```js
 <script type="text/javascript">
   new Cosalbum({
-    'xmlLink': 'https://img-1256932288.cos.ap-chengdu.myqcloud.com',
+    'xmlLink': 'https://img-xxxxxxxx.cos.ap-chengdu.myqcloud.com',
     'prependTo': '',
     'viewNum': 8
   });
