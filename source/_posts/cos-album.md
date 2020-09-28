@@ -10,7 +10,7 @@ categories:
 ---
 
 {% note info no-icon %}
-cos桶相册，终于！！终于来了！！，思路参考自[给hexo静态博客添加动态相册功能](https://me.idealli.com/post/73ad4183.html)，修改整理了一下代码，分割功能为函数，并写了注释，更加方便[伸手党](https://github.com/Lruihao/cos-album)，当然别吝啬你的star哦！
+cos桶相册，终于！！终于来了！！，思路参考自[给hexo静态博客添加动态相册功能](https://me.idealli.com/post/73ad4183.html)，
 **<span style="color: #428bca;">功能虽好，但是还是先友情提示！</span>**
 开放API是一个**很危险**的操作，意味着你的cos桶里面的所有资源包括目录结构都暴露的整个世界中，所以建议不要放一些比较私密的照片，保护自己的隐私，提防不良用心之人。下面就开始吧！
 {% endnote %}
@@ -33,16 +33,23 @@ cos桶相册，终于！！终于来了！！，思路参考自[给hexo静态博
 
 # 食用方式
 <a href="https://github.com/Lruihao/cos-album" target="_blank" class="LinkCard">下载地址，别忘点赞哈</a>
-首先，下载源码，修改`cos-album.js`中前面的配置信息，xmlLink后不需要添加`/`。
+首先，下载源码，引入`cos-album.css`和`cos-album.js`
 ```js config
-//需要解析的騰訊云COS桶XML鏈接
-let xmlLink = "https://img-xxxxx.cos.ap-chengdu.myqcloud.com";
-//添加相册到指定节点下，如: ".myalbum","#myalbum"，默认"body"
-let appendTo = "";
-//顯示數目,整數
-let showNum = 8; 
+<link rel="stylesheet" type="text/css" href="cos-album.css">
+<script type="text/javascript" src="cos-album.js"></script>
 ```
-然后，在你的html里面引入`cos-album.css`,`cos-album.js`,`viewport`视个人爱好添加。
+然后，在你的js中new一个Cosalbum对象(xmlLink后不需要添加`/`)，比如：
+```js
+<script type="text/javascript">
+  new Cosalbum({
+    'xmlLink': 'https://img-1256932288.cos.ap-chengdu.myqcloud.com',
+    'prependTo': '',
+    'viewNum': 8
+  });
+</script>
+```
+
+`viewport`视个人爱好添加。
 hexo中使用时css和js都需要做适当调整，配合加密功能使用等等，这里不再展开。
 ***注：代码设定不加载根目录文件，所以可以利用静态服务把源码部署在根目录，配合PicGo、COSBrowser上传来搭建个人图床。***
 ```xml demo
@@ -56,6 +63,13 @@ hexo中使用时css和js都需要做适当调整，配合加密功能使用等�
     <script type="text/javascript" src="cos-album.js" defer></script>
   </head>
   <body>
+    <script type="text/javascript">
+      new Cosalbum({
+        'xmlLink': 'https://img-1256932288.cos.ap-chengdu.myqcloud.com',
+        'prependTo': '',
+        'viewNum': 8
+      });
+    </script>
     <!-- 你的其他内容，如评论等 -->
   </body>
 </html>
@@ -63,6 +77,14 @@ hexo中使用时css和js都需要做适当调整，配合加密功能使用等�
 <a href="https://img.lruihao.cn" target="_blank" class="LinkCard">cos-album demo</a>
 {% asset_img view.png 大屏显示 %}
 {% asset_img mobile.png 手机显示 %}
+
+# changelog
+
+- 2019-11-24 10:52:34
+修改整理了一下代码，分割功能为函数，并写了注释，更加方便[伸手党](https://github.com/Lruihao/cos-album)!
+- 2020-9-28 22:46
+  1. 升級：相冊封裝成類，可以更方便new出來
+  2. 優化：相冊圖片樣式優化
 
 # 未实现
 - fancybox
