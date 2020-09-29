@@ -42,7 +42,7 @@ cos桶相册，终于！！终于来了！！，思路参考自[给hexo静态博
 ```js
 <script type="text/javascript">
   new Cosalbum({
-    'xmlLink': 'https://img-xxxxxxxx.cos.ap-chengdu.myqcloud.com',
+    'xmlLink': 'https://img-xxxxxxxxxx.cos.ap-chengdu.myqcloud.com',
     'prependTo': '',
     'viewNum': 8
   });
@@ -65,7 +65,7 @@ hexo中使用时css和js都需要做适当调整，配合加密功能使用等�
   <body>
     <script type="text/javascript">
       new Cosalbum({
-        'xmlLink': 'https://img-1256932288.cos.ap-chengdu.myqcloud.com',
+        'xmlLink': 'https://img-xxxxxxxxxx.cos.ap-chengdu.myqcloud.com',
         'prependTo': '',
         'viewNum': 8
       });
