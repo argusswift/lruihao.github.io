@@ -33,21 +33,34 @@ cos桶相册，终于！！终于来了！！，思路参考自[给hexo静态博
 
 # 食用方式
 <a href="https://github.com/Lruihao/cos-album" target="_blank" class="LinkCard">下载地址，别忘点赞哈</a>
-首先，下载源码，引入`cos-album.css`和`cos-album.js`
+1. 首先，下载源码，引入`cos-album.css`和`cos-album.js`
+2. 然后，在你的js中new一个Cosalbum对象(xmlLink后不需要添加`/`)
+
+## Step1
 ```js config
-<link rel="stylesheet" type="text/css" href="cos-album.css">
-<script type="text/javascript" src="cos-album.js"></script>
+<link rel="stylesheet" type="text/css" href="cos-album.min.css?v=1.1.2">
+<script type="text/javascript" src="cos-album.min.js?v=1.1.2"></script>
 ```
-然后，在你的js中new一个Cosalbum对象(xmlLink后不需要添加`/`)，比如：
+
+## Step2
 ```js
 <script type="text/javascript">
   new Cosalbum({
     'xmlLink': 'https://img-xxxxxxxxxx.cos.ap-chengdu.myqcloud.com',
     'prependTo': '',
-    'viewNum': 8
+    'viewNum': 4,
+    'imgUrl': '//img.lruihao.cn'
   });
 </script>
 ```
+
+## Params
+| param     | type   | description                        |
+| :-------- | :----- | :--------------------------------- |
+| xmlLink   | String | 需要解析的騰訊云COS桶XML鏈接         |
+| prependTo | String | 可選解析相冊到某個節點,默認: 'body'   |
+| viewNum   | Number | 每個相冊顯示的照片數目,默認: 4        |
+| imgUrl    | String | 图片CDN链接,雙擊複製URL Since: 1.1.2 |
 
 `viewport`视个人爱好添加。
 hexo中使用时css和js都需要做适当调整，配合加密功能使用等等，这里不再展开。
